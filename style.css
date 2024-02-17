@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* :root{
+    font-size: 62.5%;
+} */
+html{
+    background-color: #1C1C1C;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    display: flex;
+    gap: 25px;
+    height: 200px;
+    background-color: #363636;
+}
+.logo{
+    width: 170px;
+    border: 2px solid #000;
+    box-shadow: -1px 1px 0 #000;
+    border-radius: 5px;
+    margin: 20px;
+    transition: 300ms;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.websiteName{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+    color: #DCDCDC;
+}
+.slider{
+    margin: 50px auto;
+    width: 800px;
+    height: 430px;
+    overflow: hidden;
+    border: 2px solid #4F4F4F;
+    border-radius: 1px;
+}
+.slider h2{
+    text-align: center;
+    background-color: #4F4F4F;
+    color: #DCDCDC;
+    padding: 5px;
+    font-size: 18px;
+}
+.slides{
+    width: 400%;
+    height: 430px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 1.5s;
+}
+.slide img{
+    width: 800px;
+}
+.manualNavigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -90px;
+    display: flex;
+    justify-content: center;
+}
+.manualBtn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 400ms;
+}
+.manualBtn:not(:last-child){
+    margin-right: 30px;
+}
+.manualBtn:hover{
+    background-color: #fff;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+.navigationAuto div{
+    border: 2px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 400ms;
+}
+.navigationAuto{
+    position: absolute;
+    width: 800px;
+    margin-top: 340px;
+    display: flex;
+    justify-content: center;
+
+}
+.navigationAuto div:not(:last-child){
+    margin-right: 30px;
+}
+#radio1:checked ~ .navigationAuto .autoBtn1{
+    background-color: #fff;
+}
+#radio2:checked ~ .navigationAuto .autoBtn2{
+    background-color: #fff;
+}
+#radio3:checked ~ .navigationAuto .autoBtn3{
+    background-color: #fff;
+}
+#radio4:checked ~ .navigationAuto .autoBtn4{
+    background-color: #fff;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #4F4F4F;
+    margin: 50px;
+    background-color: #1C1C1C;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    background-color: #363636;
+    border-bottom: 1px solid #4F4F4F;
+}
+.search{
+    padding: 5px;
+    width: 600px;
+    border: 2px solid #4F4F4F;
+    border-radius: 5px;
+    background-color: #1C1C1C;
+    color: #DCDCDC;
+    font-size: 16px;
+    outline: 0;
+    transition: 200ms;
+    font-family: 'Poppins', sans-serif;
+}
+.search:hover{
+    border: 2px solid #DCDCDC;
+}
+.search::placeholder{
+    font-weight: 500;
+    color: #DCDCDC;
+}
+select{
+    padding: 3px;
+    border: 2px solid #4F4F4F;
+    border-radius: 5px;
+    background-color: #1C1C1C;
+    color: #DCDCDC;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+}
+select:hover{
+    border: 2px solid #DCDCDC;
+}
+.games{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+}
+.game{
+    padding: 10px;
+    margin: 15px;
+    background-color: #1C1C1C;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.game div{
+    width: 100%;
+    height: 300px;
+}
+.game img{
+    width: 100%;
+    height: 300px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 300ms;
+    position: relative;
+}
+.game img:hover{
+    opacity: 0.7;
+}
+.game h3{
+    margin-top: 10px;
+    color: #C0C0C0;
+}
+footer{
+    width: 100%;
+    background-color: #363636;
+    padding: 10px 0 10px 10px;
+}
+.developer{
+    width: 250px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.developer h3{
+    color: #808080;
+}
+.developer p{
+    color: #C0C0C0;
+    margin-top: 10px;
+}
+.iconGithub, .iconLinkedIn{
+    margin-top: 5px;
+    width: 30px;
+}
+.iconGithub:hover, .iconLinkedIn:hover{
+    opacity: 0.7;
+}
+.iconGithub{
+    border: 1px solid #C0C0C0;
+    border-radius: 50%;
+}
+.iconLinkedIn{
+    border: 1px solid #C0C0C0;
+    border-radius: 1px;
+}

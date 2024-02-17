@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Review</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="./assets/logo.png" alt="logo" class="logo">
+        <div class="websiteName">
+            <h1>Review de</h1>
+            <h2>Jogos</h2>
+        </div>
+    </header>
+    <section class="slider">
+        <h2>Destaques</h2>
+        <div class="slides">
+            <input type="radio" name="radioBtn" id="radio1">
+            <input type="radio" name="radioBtn" id="radio2">
+            <input type="radio" name="radioBtn" id="radio3">
+            <input type="radio" name="radioBtn" id="radio4">
+
+            <div class="slide first">
+                <img src="./assets/slide/fortnite1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./assets/slide/fortnite2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./assets/slide/fortnite3.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./assets/slide/fortnite4.jpg" alt="">
+            </div>
+
+            <div class="navigationAuto">
+                <div class="autoBtn1"></div>
+                <div class="autoBtn2"></div>
+                <div class="autoBtn3"></div>
+                <div class="autoBtn4"></div>
+            </div>
+        </div>
+
+        <div class="manualNavigation">
+            <label for="radio1" class="manualBtn"></label>
+            <label for="radio2" class="manualBtn"></label>
+            <label for="radio3" class="manualBtn"></label>
+            <label for="radio4" class="manualBtn"></label>
+        </div>
+    </section>
+    <div class="main">
+        <nav>
+            <input type="text" placeholder="Pesquisar..." class="search">
+            <select name="filter" id="" class="filter" onchange="filterGameGenre()">
+                <option value="filtrar">Filtrar</option>
+                <option value="indie">Indie</option>
+                <option value="acaoAventura">Ação e Aventura</option>
+                <option value="rpg">RPG</option>
+                <option value="fps">FPS</option>
+                <option value="ficcaoCientifica">Ficção científica</option>
+            </select>
+        </nav>
+        <div class="games">
+            <section id="game1" class="game rpg filtrar">
+                <div>
+                <img src="./assets/games/theWitcher3.jpg" alt="theWitcher3">
+                </div>
+                <h3 class="nameGame">The Witcher 3: Wild Hunt</h3>
+            </section>
+            <section id="game2" class="game acaoAventura filtrar">
+                <div>
+                <img src="./assets/games/deathStranding.jpg" alt="deathStranding">
+                </div>
+                <h3 class="nameGame">Death Stranding</h3>
+            </section>
+            <section id="game3" class="game fps filtrar">
+                <div>
+                <img src="./assets/games/rainbowSixSiege.jpg" alt="rainbowSixSiege">
+                </div>
+                <h3 class="nameGame">Rainbow Six Siege</h3>
+            </section>
+            <section id="game4" class="game indie filtrar">
+                <div>
+                <img src="./assets/games/aShortHike.jpg" alt="aShortHike">
+                </div>
+                <h3 class="nameGame">A Short Hike</h3>
+            </section> 
+            <section id="game5" class="game acaoAventura filtrar">
+                <div>
+                <img src="./assets/games/subnautica.jpg" alt="subnautica">
+                </div>
+                <h3 class="nameGame">Subnautica</h3>
+            </section>
+            <section id="game6" class="game ficcaoCientifica filtrar">
+                <div>
+                <img src="./assets/games/noMansSky.jpg" alt="noMansSky">
+                </div>
+                <h3 class="nameGame">No Man's Sky</h3>
+            </section>
+            <section id="game7" class="game indie filtrar">
+                <div>
+                <img src="./assets/games/gris.jpg" alt="gris">
+                </div>
+                <h3 class="nameGame">Gris</h3>
+            </section>
+            <section id="game8" class="game rpg filtrar">
+                <div>
+                <img src="./assets/games/gothamKnights.jpg" alt="gothamKnights">
+                </div>
+                <h3 class="nameGame">Gotham Knights</h3>
+            </section>
+            
+        </div>
+    </div>
+    <footer>
+        <section class="developer">
+            <h3>Desenvolvido por:</h3>
+            <p>Rafael Vitor de Oliveira</p>
+            <div>
+                <a href="https://github.com/Rafael-Vitor-Oliveira" target="_blank"><img src="./assets/gitHub.svg" alt="GitHub Rafael" class="iconGithub" title="GitHub"></a>
+                <a href="https://www.linkedin.com/in/rafael-oliveira-278b4422b" target="_blank"><img src="./assets/linkedIn.svg" alt="linkedIn Rafael" class="iconLinkedIn" title="linkedIn"></a>
+            </div>
+        </section>
+        <div>
+            <p></p>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
